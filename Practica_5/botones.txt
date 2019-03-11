@@ -1,0 +1,6 @@
+botones 
+m y n mobimiento de brazo general
+b y v movimiento de brazo y antebrazo
+l y k muñeca
+h y j dedos 
+los puse asi para ahorrar botones
