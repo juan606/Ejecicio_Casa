@@ -1,9 +1,9 @@
 /*---------------------------------------------------------*/
-/* ----------------   Práctica 5 --------------------------*/
+/* ----------------   PrÃ¡ctica 5 --------------------------*/
 /*-----------------    2019-2   ---------------------------*/
-/*------------- Computación gráfica e interacción humano computadora ---------------*/
+/*------------- ComputaciÃ³n grÃ¡fica e interacciÃ³n humano computadora ---------------*/
 
-/*-------------Diaz Acosta Erika      Grupo4 -------------- */
+/*-------------Juan Carlos Nolasco     Grupo4 -------------- */
 /*---------------------Version visual 2017------------------------*/
 /*---------Instrucciones-------------------------------------------*/
 /*--------Use las teclas para mover el modelo----------------------*/
@@ -12,8 +12,8 @@
 /*--------A izquierda   D derecha------------------------------------*/
 /*--------flechas para rotar-----arriba abajo y a los lados--------*/
 /*---------Para mover las articulaciones:----------------------------------------------*/
-/*----------X rota hombro------F antebrazo--------U muñeca----------------------------*/
-/*----------I + shift pulgar --- O + shift indice --- P+ shift medio --- J + shift anular---- K + shift meñique------------*/
+/*----------X rota hombro------F antebrazo--------U muÃ±eca----------------------------*/
+/*----------I + shift pulgar --- O + shift indice --- P+ shift medio --- J + shift anular---- K + shift meÃ±ique------------*/
 /*---------al mover las articulaciones las teclas + shift tambien las mueven en sentido contrario o de regreso-------------*/
 /*---------en el caso de los dedos se hace de forma contraria, debes apretar la tecla + shift para moverlos hacia adentro -----------*/
 /*---------y la tecla sola para regresarlos a su posicion----------------------------------------*/
@@ -226,7 +226,7 @@ modelTemp = model;//TEMPORAL
 model = glm::scale(model, glm::vec3(5, 5, 5));//escalas
 projectionShader.setMat4("model", model);
 glDrawArrays(GL_QUADS, 0, 24);//ROJO
-//USANDOLA MATRIZ TEMPORAL PARA TRASLADAR EL CUBO AZUL A ´PARTIR DEL ROJO
+//USANDOLA MATRIZ TEMPORAL PARA TRASLADAR EL CUBO AZUL A Â´PARTIR DEL ROJO
 model = modelTemp; //A PARTIR DE AQUI se restaura la inf. para que no afecte la escala
 model = glm::translate(model = glm::mat4(1.0f), glm::vec3(-17, 0, 0));
 model = glm::scale(model, glm::vec3(8, 8, 8));//escalas
@@ -399,7 +399,7 @@ glDrawArrays(GL_QUADS, 0, 24);//DIBUJANDO AZUL	*/
 	glDrawArrays(GL_QUADS, 0, 24);
 	model = modelTemp2;
 
-	//meñique
+	//meÃ±ique
 	model = glm::translate(model, glm::vec3(0.5, -0.375, 0));
 	model = glm::rotate(model, glm::radians(ang5), glm::vec3(0, -1, 0));
 	model = glm::translate(model, glm::vec3(0.1, 0, 0));
@@ -410,7 +410,7 @@ glDrawArrays(GL_QUADS, 0, 24);//DIBUJANDO AZUL	*/
 	projectionShader.setVec3("aColor", glm::vec3(.4, .5, .7));
 	glDrawArrays(GL_QUADS, 0, 24);
 	model = modelTemp;
-	//meñ2
+	//meÃ±2
 	model = glm::translate(model, glm::vec3(0.1, 0, 0));
 	model = glm::rotate(model, glm::radians(ang5*0.7f), glm::vec3(0, -1, 0));
 	model = glm::translate(model, glm::vec3(0.1, 0, 0));
@@ -421,7 +421,7 @@ glDrawArrays(GL_QUADS, 0, 24);//DIBUJANDO AZUL	*/
 	projectionShader.setVec3("aColor", glm::vec3(2, 0.9, .4));
 	glDrawArrays(GL_QUADS, 0, 24);
 	model = modelTemp;
-	//meñ3
+	//meÃ±3
 	model = glm::translate(model, glm::vec3(0.1, 0, 0));
 	model = glm::rotate(model, glm::radians(ang5*0.7f), glm::vec3(0, -1, 0));
 	model = glm::translate(model, glm::vec3(0.1, 0, 0));
@@ -696,7 +696,7 @@ int main()
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		//Mi función de dibujo
+		//Mi funciÃ³n de dibujo
 		display();
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
